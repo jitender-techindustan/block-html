@@ -2,21 +2,21 @@
   "name": "block-html",
   "version": "1.0.0",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=dist/index.js"
+    "lint": "tsc",
+    "build": "tsup"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "esbuild": "0.24.0"
-  },
-  "dependencies": {
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tsup": "^8.3.0",
     "typescript": "^5.6.3",
     "zod": "^3.23.8"
   }
